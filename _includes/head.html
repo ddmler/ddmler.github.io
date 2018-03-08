@@ -9,11 +9,14 @@
   <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
   <style>
-  a, pre code {
+  a, a:visited, pre code {
     color: white;
   }
-  code {
+  code, a:hover {
     color: #d14;
+  }
+  article a {
+    text-decoration: underline;
   }
   .highlighter-rouge, .highlight, pre, code {
     background-color: #263238 !important;
