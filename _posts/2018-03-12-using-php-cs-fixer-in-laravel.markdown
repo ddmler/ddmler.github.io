@@ -36,3 +36,7 @@ return PhpCsFixer\Config::create()
 And that's it! With these two simple steps you can fix your entire codebase at once with the command:
 
 `./vendor/bin/php-cs-fixer fix`
+
+Or use the `--dry-run` flag to only show the fixes it would do:
+
+`./vendor/bin/php-cs-fixer fix --dry-run`
