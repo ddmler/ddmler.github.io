@@ -3,7 +3,7 @@ layout: post
 title:  "Using PHP-CS-Fixer in Laravel"
 date:   2018-03-12 12:00:00 +0100
 categories: laravel linter
-description: How to set up and use PHP-CS-Fixer in a project as shown with Laravel for example.
+description: How to set up and use PHP-CS-Fixer in a project using Laravel as an example.
 ---
 
 With multiple people working on a project there will almost certainly come a time where even though you all agreed on a coding style convention the violations against this convention pile up (at least if you don't have your CI set up to look for those things, which you probably should then). Maybe it's just a quick bug fix or someone new to the codebase or you are stuck with a legacy application that doesn't even have a coding style convention.
