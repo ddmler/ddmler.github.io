@@ -3,7 +3,7 @@ layout: post
 title:  "Quick Tip: Simplify command line scripts with npm scripts"
 date:   2018-03-14 12:00:00 +0100
 categories: cli npm
-description: How to set up and use PHP-CS-Fixer in a project using Laravel as an example.
+description: NPM scripts offers an easy way to run complex scripts with a simple command.
 ---
 
 If you find yourself typing a specific command a lot you may want to simplify it by using a feature of npm (or another package manager like composer) that allows you to define scripts to run, effectively giving them a simple alias that is easier to remember. To define a script just add a `scripts` object to your package.json file and define some scripts you want to be able to run. An example could look like this:
