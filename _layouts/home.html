@@ -10,12 +10,12 @@ layout: default
     {% for post in site.posts %}
       <li>
         {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
-        <h5><a class="white-text" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a> <small>{{ post.date | date: date_format }}</small></h5>
-        <span>{{ post.description | escape }}</span>
+        <p><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a> <small class="grey-text text-lighten-1">{{ post.date | date: date_format }}</small><br>
+        {{ post.description | escape }}</p>
       </li>
     {% endfor %}
   </ul>
 
-  <p class="rss-subscribe">subscribe <a class="white-text" href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
 
 </div>

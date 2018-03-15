@@ -9,18 +9,24 @@
   <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
   <style>
-  a, a:visited, pre code {
-    color: white;
+  a, a:visited, a:hover {
+    color: #1de9b6;
   }
-  code, article a:hover {
+  code {
     color: #d14;
   }
-  article a {
-    text-decoration: underline;
+  header a, footer a, pre code {
+    color: white !important;
+  }
+  header a:hover, footer a:hover {
+    text-decoration: none;
   }
   .highlighter-rouge, .highlight, pre, code {
     background-color: #263238 !important;
     border: none !important;
+  }
+  .post-list {
+    margin-top: 30px;
   }
   </style>
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
