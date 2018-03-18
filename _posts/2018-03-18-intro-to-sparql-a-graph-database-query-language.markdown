@@ -10,7 +10,7 @@ SPARQL is a W3C standard to process graph data in the RDF format (W3C standardiz
 The data is represented as triples that follow this standard format: `<subject> <predicate> <object>`. A collection of these triples creates a graph (subject and object are nodes and predicate is an edge).
 
 Suppose we have this RDF data at the url: `http://example.org/graph`
-```xml
+```sparql
 @prefix  foaf:  <http://xmlns.com/foaf/0.1/> .
 
 _:a  foaf:name     "Enrico" .
@@ -85,7 +85,7 @@ Which would give you the name of an object just like before, and if that object 
 Which brings us to the last point of this post: Property Paths. Until now we only ever used one edge in our graph (remember the middle thing in our triple is an edge in our graph).
 With Property Paths we can walk multiple edges in our graph at once. So if we have a lot of data in this format and try the following SPARQL query:
 
-```xml
+```sparql
 _:a  foaf:name     "Enrico" .
 _:a  foaf:knows    _:b .
 _:b  foaf:name     "Bob" .
