@@ -1,0 +1,34 @@
+---
+layout: post
+title:  "Argon2 in PHP 7.2"
+date:   2018-04-05 18:00:00 +0100
+categories: php
+description: A quick look at Argon2i, the new password hashing algorithm in PHP 7.2.
+---
+PHP 7.2 now supports Argon2i as your password_hash algorithm. Argon2 is the winner of the 2015 Password Hashing Competition. It consists of three related versions:
+- Argon2i is optimized against side-channel attacks
+- Argon2d is optimized against GPU attacks (not suitable for password hashing)
+- Argon2id is a hybrid of the other two. There is currently a RFC to get this version into PHP too.
+
+To use Argon2i:
+
+```php
+$hash = password_hash($password, PASSWORD_ARGON2I);
+```
+
+`PASSWORD_DEFAULT` is still set to bcrypt and is still perfectly fine to use.
+
+As with bcrypt you can and should also supply an options array, however Argon2 provides more options: memory_cost, time_cost, threads.
+
+```php
+$options = [
+    'memory_cost' => 2048,
+    'time_cost'   => 4,
+    'threads'     => 3
+];
+$hash = password_hash($password, PASSWORD_ARGON2I, $options);
+```
+
+The memory cost represents how much memory the algorithm will use, the time cost represents the number of times the algorithm will run and threads represents the number of CPU threads that are used. This allows for a much finer configuration than the bcrypt cost factor with which you can't scale memory and time independently.
+
+You should use a benchmark on your machine to try different settings to find a good balance between the security and performance you need. One thing to note is that the Argon2i hash will need slightly more space to save the hash.
