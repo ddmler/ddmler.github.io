@@ -31,4 +31,4 @@ $hash = password_hash($password, PASSWORD_ARGON2I, $options);
 
 The memory cost represents how much memory the algorithm will use, the time cost represents the number of times the algorithm will run and threads represents the number of CPU threads that are used. This allows for a much finer configuration than the bcrypt cost factor with which you can't scale memory and time independently.
 
-You should use a benchmark on your machine to try different settings to find a good balance between the security and performance you need. One thing to note is that the Argon2i hash will need slightly more space to save the hash.
+You should use a benchmark on your machine to try different settings to find a good balance between the security and performance you need. One thing to note is that the Argon2i hash will need slightly more space than bcrypt to save the hash.
