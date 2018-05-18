@@ -26,6 +26,7 @@ Public route table:
 | --- | --- |
 | 10.0.0.0/16 | local |
 | 0.0.0.0/0 | id of your internet gateway |
+{: .blue-grey .darken-4}
 
 Private route table:
 
@@ -33,7 +34,7 @@ Private route table:
 | --- | --- |
 | 10.0.0.0/16 | local |
 | 0.0.0.0/0 | id of your nat gateway |
-
+{: .blue-grey .darken-4}
 
 The last step is to create 2 Security groups, which basically are simplified firewall rules, named: WebServer and DBServer. Again choose our VPC from step 1. After both are created set the Inbound and Outbound rules to:
 
@@ -43,6 +44,7 @@ DBServer Inbound Rules:
 | --- | --- |
 | ALL Traffic | id of your dbserver security group |
 | MySQL/Aurora (3306) | id of you webserver security group |
+{: .blue-grey .darken-4}
 
 Protocol and port range will be set automatically when choosing the type correctly. You can of course choose another database like PostgreSQL here.
 
@@ -53,6 +55,7 @@ DBServer Outbound Rules:
 | ALL Traffic | id of your dbserver security group |
 | HTTP (80) | 0.0.0.0/0 |
 | HTTPS (443) | 0.0.0.0/0 |
+{: .blue-grey .darken-4}
 
 These rules define that all instances in this security group can communicate with each other however they want, instances from the webserver group can only access via mysql and the instances in the dbserver group can access the internet for updates via the NAT gateway.
 
@@ -64,6 +67,7 @@ WebServer Inbound Rules:
 | HTTP (80) | 0.0.0.0/0 |
 | HTTPS (443) | 0.0.0.0/0 |
 | SSH (22) | your home networks public ip address (or range) |
+{: .blue-grey .darken-4}
 
 The HTTP and HTTPS rules allow incoming traffic from the internet and the SSH rule allows you to access your servers via SSH.
 
@@ -75,6 +79,7 @@ WebServer Outbound Rules:
 | HTTP (80) | 0.0.0.0/0 |
 | HTTPS (443) | 0.0.0.0/0 |
 | MySQL/Aurora (3306) | id of your dbserver security group |
+{: .blue-grey .darken-4}
 
 These rules allow outgoing web traffic to the whole internet or to our private network via mysql. The all traffic rule allows for communication between all webservers themselves.
 
