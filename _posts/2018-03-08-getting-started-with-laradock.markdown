@@ -45,7 +45,7 @@ This workspace should provide you with all the command line tools you need.
 
 Links to find out more:
 
-[Laradoc website][laradock]
+[Laradock website][laradock]
 
 [Laravel website][laravel]
 
