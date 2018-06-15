@@ -24,6 +24,8 @@ If you develop your app on HTTPS you need to add the `--https` flag to the hot c
 
 Also make sure to use the Laravel mix helper to get the correct url in the src attribute of your assets when including them in your page. This will make everything work automatically in development and production.
 
+{% raw %}
 ```html
 <script src="{{ mix('js/app.js') }}"></script>
 ```
+{% endraw %}
