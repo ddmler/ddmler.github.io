@@ -20,6 +20,10 @@ One example where hot reloading is available is Laravel with Laravel Mix:
 
 As you can see Laravel Mix provides a watch command which uses `webpack --watch` internally and a hot command which provides the hot reloading.
 
+You can run them with npm like this:
+
+`npm run hot`
+
 If you develop your app on HTTPS you need to add the `--https` flag to the hot command.
 
 Also make sure to use the Laravel mix helper to get the correct url in the src attribute of your assets when including them in your page. This will make everything work automatically in development and production.
