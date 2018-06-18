@@ -21,7 +21,7 @@ Template goes here.
 
 The name and about attributes will be shown to the user before he creates a new issue. If you want some more issue templates just create new files in this directory. At the end it could look like the issue template chooser of facebook/jest:
 
-![Example of Facebooks Jest issue templates](assets/github_issues.PNG)
+![Example of Facebooks Jest issue templates]({{ site.url }}/assets/github_issues.PNG)
 
 They have 4 different templates and if nothing seems to fit for your issue you can still choose to have no template. You can try it out on [Jests GitHub page][jest]. Create a new issue (but don't submit it) to see how the template choosing works.
 
