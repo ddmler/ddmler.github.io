@@ -11,32 +11,60 @@
   a, a:visited, a:hover {
     color: #1de9b6;
   }
+    
   code {
     color: #d14;
   }
+    
   header a, footer a, pre code {
     color: white !important;
   }
+    
   header a:hover, footer a:hover {
     text-decoration: none;
   }
+    
   .highlighter-rouge, .highlight, pre, code {
     background-color: #263238 !important;
     border: none !important;
   }
+    
   .post-list {
     margin-top: 30px;
   }
+    
   table, th, td, tbody {
       color: white;
       border: none !important;
   }
+    
   thead {
       color: white;
       border-bottom: 1px solid white;
   }
+    
   table tr:nth-child(even), th {
       background-color: #263238 !important;
+  }
+    
+  .highlight .err {
+    background-color: #263238;
+  }
+
+  .highlight .nt, highlight .k {
+    color: #26a69a;
+  }
+
+  .highlight .nx {
+    color: teal;
+  }
+
+  .highlight .k, .highlight .kc {
+    font-weight: normal;
+  }
+
+  .highlight .kc {
+    color: #d14;
   }
   </style>
   <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
