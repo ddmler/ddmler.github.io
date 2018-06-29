@@ -19,7 +19,7 @@ One important thing to keep in mind is that the runtime data on which the binary
 [Microsofts Build Reference][optimizations] has a list of optimizations that are performed by PGO for example reordering if and else blocks depending on which is more likely to be true.
 
 
-#### How to use it
+## How to use it
 
 This example uses GCC, but your favorite compiler probably supports the same features.
 
@@ -37,7 +37,7 @@ To get started we just run it once, but normally you would run it multiple times
 
 The resulting binary should be a bit more efficient than the normal -O3 version. Next let's have a look at how to use real usage data from your end users as the profile instead of having to simulate the usage.
 
-#### AutoFDO
+## AutoFDO
 
 [AutoFDO][autofdo_github] is a project aiming to make the needed work for PGO simpler by removing the need for instrumenting the program to gather runtime data. Instead it uses perf and converts that data with a tool to the correct format. The main difference between AutoFDO and normal PGO is, that AutoFDO collects its runtime data on an optimized binary (for example in production).
 
@@ -56,7 +56,7 @@ Now just use the gcov file as our profile (this time with another option called 
 And we're done. For the next version/build of your program just collect perf data from production and on your next build you will just have to create a new gcov file and use it as the new profile.
 
 
-#### Improving PHP performance with PGO?
+## Improving PHP performance with PGO?
 
 So can we also improve PHP performance with PGO? Yes. We can instrument (or with AutoFDO collect perf data) our PHP binary and let it run our PHP project to collect data. With instrumentation it would work like this: First instrument the binary. Next execute `php index.php` or multiple different pages. Try to execute the parts of your PHP project that are executed most often in production. Lastly use that data to get a PHP binary that is optimized for your PHP app.
 
