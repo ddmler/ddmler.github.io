@@ -29,7 +29,7 @@ module.exports = {
 
 The amd setting is only needed if you want to use AMD style modules.
 
-Now just run it like this: `./node_modules/.bin/eslint {dir} --fix` and replace dir with the directory you want to run it on to let the plugin fix all style guide violations it can.
+Now just run it like this: `./node_modules/.bin/eslint {dir} --fix --ext .vue` and replace dir with the directory you want to run it on to let the plugin fix all style guide violations it can.
 
 Check [the plugins GitHub page][github] for which rules it can fix automatically.
 
