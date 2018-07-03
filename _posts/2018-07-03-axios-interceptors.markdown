@@ -109,4 +109,4 @@ Lastly some css to position our close button and make it a bit bigger.
 }
 ```
 
-The approach to handle errors automatically like this may not be the best for each project, however for small projects it should be enough.
+Just handling all errors like this may not be a good idea, however you can also drop the other errors and only display validation errors. For this purpose this snippet is very powerful. The other errors can then be handled normally in the now empty catch callback.
