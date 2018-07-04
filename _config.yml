@@ -32,7 +32,7 @@ plugins:
   - jekyll-seo-tag
   
 disqus:
-  shortname: ddmler
+  shortname: https-ddmler-github-io
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
