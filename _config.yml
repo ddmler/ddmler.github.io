@@ -30,6 +30,9 @@ plugins:
   - jemoji
   - jekyll-mentions
   - jekyll-seo-tag
+  
+disqus:
+  shortname: ddmler
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
