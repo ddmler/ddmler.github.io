@@ -7,6 +7,7 @@ description: A prolog-like declarative programming language used for solving NP-
 ---
 
 Part 1: Answer set programming: The basics (You are here)
+
 Part 2: Answer set programming: Sudoku solver (coming soon)
 
 Answer set programming is a declarative form of programming. This means you don't need to code a way to solve the problem, you just have to describe your problem and let a so-called solver handle the rest. This is the same as your SQL query, in which you only describe what you would like to have and the database itself figures out how best to get this data for you. There are multiple solvers out there, one example would be [clingo][clingo]. To make it easy to get started, you can run clingo [in your browser][browser] or [with Docker][docker].
@@ -51,7 +52,7 @@ sudoku(1..9, 1..9).
 The first character has to be lowercase. This will generate a complete 9x9 sudoku field, one sudoku predicate for each field. These can be nested for example:
 
 ```prolog
-% This is a comment: For field sudoku(1,1)
+% a comment: the same as sudoku(1,1).
 sudoku(x(1), y(1)).
 ```
 
