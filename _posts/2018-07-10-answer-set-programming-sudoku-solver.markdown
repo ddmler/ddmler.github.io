@@ -7,6 +7,7 @@ description: Creating a generic sudoku solver in under 10 lines in answer set pr
 ---
 
 Part 1: [Answer set programming: The basics][part1]
+
 Part 2: Answer set programming: Sudoku solver (You are here)
 
 Answer set programming is a prolog-like form of declarative programming that is primarily used to solve NP-hard search problems. Lets see how easy it is to create a generic sudoku solver that can solve any sudoku you throw at it:
@@ -28,6 +29,8 @@ subgrid(X,Y,A,B) :- x(X), x(A), y(Y), y(B),(X-1)/3 == (A-1)/3, (Y-1)/3 == (B-1)/
 ```
 
 The first three lines just define that our sudoku board is 9x9 fields and we use the numbers from 1 to 9 as the fields contents. The next line starting with `{sudoku(X,Y,N): ...` defines that each field of our board has to contain exactly 1 number from 1 to 9 (our n). The next line defines a little helper that tells us which fields are in the same subgrid. In this case we choose a 3x3 subgrid. If the helper is set for two fields, then they're in the same subgrid, if it is not set they're not. The next 3 lines are constraints. The first one eliminates all possibilities where a number isn't unique in it's line and the second one for the column. The third rule eliminates possibilities where a number isn't unique in its subgrid. The last line just outputs all resulting sudoku fields.
+
+We didn't even try to have the least amount of lines in this one. We could easily sacrifice readability to condense it even more.
 
 The way this program would be executed is by having another file that contains all given numbers in this format: `sudoku(X,Y,N).` and supplying both as an argument to an answer set programming solver like clingo (learn more about clingo: [Answer set programming: The basics][part1]):
 
