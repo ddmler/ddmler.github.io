@@ -8,7 +8,7 @@ description: A prolog-like declarative programming language used for solving NP-
 
 Part 1: Answer set programming: The basics (You are here)
 
-Part 2: Answer set programming: Sudoku solver (coming soon)
+Part 2: [Answer set programming: Sudoku solver][part2]
 
 Answer set programming is a declarative form of programming. This means you don't need to code a way to solve the problem, you just have to describe your problem and let a so-called solver handle the rest. This is the same as your SQL query, in which you only describe what you would like to have and the database itself figures out how best to get this data for you. There are multiple solvers out there, one example would be [clingo][clingo]. To make it easy to get started, you can run clingo [in your browser][browser] or [with Docker][docker].
 
@@ -117,8 +117,9 @@ This will choose from all possible solutions the one (or multiple) with the mini
 
 ## What's next?
 
-Try clingo [in your browser][browser] for some examples to play around with. You can also include a python or lua script to write extra code in these languages if you find it hart to express something with declarative programming. Don't forget to check out part 2 to see a sudoku solver. (coming soon)
+Try clingo [in your browser][browser] for some examples to play around with. You can also include a python or lua script to write extra code in these languages if you find it hart to express something with declarative programming. Don't forget to check out [part 2 to see a sudoku solver][part2].
 
 [clingo]: https://potassco.org/
 [browser]: https://potassco.org/clingo/run/
 [docker]: https://github.com/ddmler/docker-clingo
+[part2]: https://ddmler.github.io/asp/2018/07/10/answer-set-programming-sudoku-solver.html
