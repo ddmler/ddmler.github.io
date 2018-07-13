@@ -6,6 +6,7 @@ categories: laravel vue
 description: "Part 1: Setting up a Vue SPA with a Laravel API as the backend using JWT authentication."
 ---
 
+{% raw %}
 The complete source code of this series is available [on GitHub][source].
 
 - Part 1: Setting up a Vue SPA with a Laravel API as the backend using JWT authentication. (You are here)
@@ -415,6 +416,8 @@ Route::group([
 ```
 
 You should now be able to register, login and logout. You can stop the tutorial here if you just wanted to set up a starter boilerplate Vue SPA with a Laravel API as a backend. For everyone else we now begin developing our Trello clone by creating all the database stuff in Part 2.
+
+{% endraw %}
 
 [laradock]: https://ddmler.github.io/laravel/docker/2018/03/08/getting-started-with-laradock.html
 [jwt]: https://github.com/tymondesigns/jwt-auth
