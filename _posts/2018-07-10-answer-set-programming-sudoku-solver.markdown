@@ -6,9 +6,8 @@ categories: asp
 description: Creating a generic sudoku solver in under 10 lines in answer set programming.
 ---
 
-Part 1: [Answer set programming: The basics][part1]
-
-Part 2: Answer set programming: Sudoku solver (You are here)
+- Part 1: [Answer set programming: The basics][part1]
+- Part 2: Answer set programming: Sudoku solver (You are here)
 
 Answer set programming is a prolog-like form of declarative programming that is primarily used to solve NP-hard search problems. Lets see how easy it is to create a generic sudoku solver that can solve any sudoku you throw at it:
 
