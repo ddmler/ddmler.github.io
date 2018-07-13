@@ -3,7 +3,7 @@ layout: post
 title:  "Vue SPA with Laravel API Part 1"
 date:   2018-07-13 18:00:00 +0100
 categories: laravel vue
-description: Part 1: Setting up a Vue SPA with a Laravel API as the backend using JWT authentication.
+description: Part 1&#58; Setting up a Vue SPA with a Laravel API as the backend using JWT authentication.
 ---
 
 The complete source code of this series is available [on GitHub][source].
