@@ -8,28 +8,21 @@ description: "Part 1: Setting up a Vue SPA with a Laravel API as the backend usi
 
 The complete source code of this series is available [on GitHub][source].
 
-Part 1: Setting up a Vue SPA with a Laravel API as the backend using JWT authentication. (You are here)
-
-Part 2: Creating everything database related: models, migrations, seeders and factories.
-
-Part 3: Setting up API routes and creating API resource controllers.
-
-Part 4: Testing the API with feature tests and sqlite.
-
-Part 5: Setting up Continuous Deployment with TravisCI and Heroku.
-
-Part 6: Customizing the frontend skeleton, design and Dashboard component.
-
-Part 7: Creating the remaining Vue components: Board, List, Card, Modal.
-
-Part 8: Setting up Jest and testing all Vue components with it.
+- Part 1: Setting up a Vue SPA with a Laravel API as the backend using JWT authentication. (You are here)
+- Part 2: Creating everything database related: models, migrations, seeders and factories.
+- Part 3: Setting up API routes and creating API resource controllers.
+- Part 4: Testing the API with feature tests and sqlite.
+- Part 5: Setting up Continuous Deployment with TravisCI and Heroku.
+- Part 6: Customizing the frontend skeleton, design and Dashboard component.
+- Part 7: Creating the remaining Vue components: Board, List, Card, Modal.
+- Part 8: Setting up Jest and testing all Vue components with it.
 
 (Links will be added when the posts are online)
 
 In this multipart series we will be creating a Vue.js single page application with a Laravel backend API. In this part we will be setting up the skeleton, which means just enough to register and login, so if you only want the skeleton of our SPA you can stop after the first part. After that we will continue by building a small Trello clone as our SPA. What you will need to follow along:
 
-- NPM/Yarn and Composer installed
-- something to run your project on (for example [Laradock][laradock])
+1. NPM/Yarn and Composer installed
+1. something to run your project on (for example [Laradock][laradock])
 
 This is built with Laravel 5.6 and Vue 2.5 if you use newer versions there could be some problems along the way.
 
