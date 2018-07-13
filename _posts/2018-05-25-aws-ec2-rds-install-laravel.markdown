@@ -6,9 +6,8 @@ categories: aws
 description: Launching a webserver with AWS EC2 and a database with AWS RDS and installing a Laravel project on them.
 ---
 
-Part 1: [AWS VPC creating a public and private subnet][part1]
-
-Part 2: AWS EC2 & RDS install Laravel (you are here)
+- Part 1: [AWS VPC creating a public and private subnet][part1]
+- Part 2: AWS EC2 & RDS install Laravel (you are here)
 
 Now we want to launch some stuff in our VPC and try to get a Laravel application running. The first step is to create a database in the private subnet and a webserver in the public subnet.
 
