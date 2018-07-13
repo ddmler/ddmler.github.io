@@ -6,9 +6,8 @@ categories: aws
 description: Creating a new VPC in AWS with a public and private subnet, a NAT gateway, routing and security group rules.
 ---
 
-Part 1: AWS VPC creating a public and private subnet (you are here)
-
-Part 2: [AWS EC2 & RDS install Laravel][part2]
+- Part 1: AWS VPC creating a public and private subnet (you are here)
+- Part 2: [AWS EC2 & RDS install Laravel][part2]
 
 This post is part 1 of a 2 part series. In this part we will create a virtual private network with a public and a private subnet with AWS VPC. In the next part we will launch a database into the private network and a webserver into the public network and install a Laravel application.
 
