@@ -6,7 +6,6 @@ categories: laravel vue
 description: "Part 1: Setting up a Vue SPA with a Laravel API as the backend using JWT authentication."
 ---
 
-{% raw %}
 The complete source code of this series is available [on GitHub][source].
 
 - Part 1: Setting up a Vue SPA with a Laravel API as the backend using JWT authentication. (You are here)
@@ -50,6 +49,7 @@ Route::any('{all}', function () {
 Next we want to create the Laravel view under `resources/views/app.blade.php`:
 
 ```html
+{% raw %}
 <!doctype html>
 <html lang="{{ app()->getLocale() }}">
     <head>
@@ -70,6 +70,7 @@ Next we want to create the Laravel view under `resources/views/app.blade.php`:
         <script src="{{ mix('/js/app.js') }}"></script>
     </body>
 </html>
+{% endraw %}
 ```
 
 This will be our only Laravel view and we will mount Vue to the div with the id app later. We use mix to take care of our css and js assets.
@@ -137,6 +138,7 @@ First we tell vue to use vue-router and the vue-axios wrapper and set the defaul
 Now lets create the SPA navigation, for this create `resources/assets/App.vue`:
 
 ```html
+{% raw %}
 <template>
     <div>
         <div v-if="$auth.ready()">
@@ -170,6 +172,7 @@ Now lets create the SPA navigation, for this create `resources/assets/App.vue`:
         </div>
     </div>
 </template>
+{% endraw %}
 ```
 
 We will show a loading message while our auth object is not yet ready. If it is ready we render a navigation and the router view. Notice that the auth object provides a lot of useful functions like check, logout and the username. With these we can create a navigation that changes depending on your authentication state and the logout functionality is done already.
@@ -196,6 +199,7 @@ The last two steps for the frontend are a register and login component.
 `resources/assets/components/Register.vue`:
 
 ```html
+{% raw %}
 <template>
     <div>
         <div v-if="error && !success">
@@ -258,6 +262,7 @@ The last two steps for the frontend are a register and login component.
         }
     }
 </script>
+{% endraw %}
 ```
 
 Vue-auth provides a register method which we use and provide the data from the form above. We then also provide a success and an error function and don't redirect on success. If there is an error we will highlight the field and provide an error message (from Laravel).
@@ -416,8 +421,6 @@ Route::group([
 ```
 
 You should now be able to register, login and logout. You can stop the tutorial here if you just wanted to set up a starter boilerplate Vue SPA with a Laravel API as a backend. For everyone else we now begin developing our Trello clone by creating all the database stuff in Part 2.
-
-{% endraw %}
 
 [laradock]: https://ddmler.github.io/laravel/docker/2018/03/08/getting-started-with-laradock.html
 [jwt]: https://github.com/tymondesigns/jwt-auth
