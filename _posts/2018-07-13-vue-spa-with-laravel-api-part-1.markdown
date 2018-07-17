@@ -9,7 +9,7 @@ description: "Part 1: Setting up a Vue SPA with a Laravel API as the backend usi
 The complete source code of this series is available [on GitHub][source].
 
 - Part 1: Setting up a Vue SPA with a Laravel API as the backend using JWT authentication. (You are here)
-- Part 2: Creating everything database related: models, migrations, seeders and factories.
+- Part 2: [Creating everything database related: models, migrations, seeders and factories.][part2]
 - Part 3: Setting up API routes and creating API resource controllers.
 - Part 4: Testing the API with feature tests and sqlite.
 - Part 5: Setting up Continuous Deployment with TravisCI and Heroku.
@@ -427,8 +427,9 @@ Route::group([
 });
 ```
 
-You should now be able to register, login and logout. You can stop the tutorial here if you just wanted to set up a starter boilerplate Vue SPA with a Laravel API as a backend. For everyone else we now begin developing our Trello clone by creating all the database stuff in Part 2.
+You should now be able to register, login and logout. You can stop the tutorial here if you just wanted to set up a starter boilerplate Vue SPA with a Laravel API as a backend. For everyone else we now begin developing our Trello clone by creating all the database stuff in [Part 2][part2].
 
 [laradock]: https://ddmler.github.io/laravel/docker/2018/03/08/getting-started-with-laradock.html
 [jwt]: https://github.com/tymondesigns/jwt-auth
 [source]: https://github.com/ddmler/boards
+[part2]: https://ddmler.github.io/laravel/vue/2018/07/17/vue-spa-with-laravel-api-part-2.html
