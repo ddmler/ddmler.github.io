@@ -191,7 +191,7 @@ class CreateBoardListsTable extends Migration
 }
 ```
 
-This time with a board_id instead of a user_id since we only have a relationship with the board model. The order field will indicate how the user sorted his Lists on the Board (they will be drag&drop sortable). We also define a foreign key which cascades the deletes from boards to all lists of a board again. Finally we create a Cards table migration (The User migration already comes out of the box in Laravel):
+This time with a board_id instead of a user_id since we only have a relationship with the board model. The order field will indicate how the user sorted his Lists on the Board (they will be sortable via drag&drop). We also define a foreign key which cascades the deletes from boards to all lists of a board again. Finally we create a Cards table migration (The User migration already comes out of the box in Laravel):
 
 ```php
 <?php
@@ -233,7 +233,7 @@ class CreateCardsTable extends Migration
 }
 ```
 
-A lot is pretty much the same: id, name, board_list_id and order. We also have another foreign key, which means if a user deletes his account a cascade of deletes will be triggered that deletes all his boards, his lists and his cards as well. Notice that the board_list_id has to be written in snake case for Eloquent to find it since the class name is in camel case and Eloquent automatically converts this. Finally we add a simple text field called description.
+A lot is pretty much the same: id, name, board_list_id and order. We also have another foreign key, which means if a user deletes his account a cascade of deletes will be triggered that delete all his boards, his lists and his cards as well. Notice that the board_list_id has to be written in snake case for Eloquent to find it since the class name is in camel case and Eloquent automatically converts this. Finally we add a simple text field called description.
 
 And with that we can run: `php artisan migrate` to create all tables in the database. If you got an error use `php artisan migrate:fresh` since up to the error everything that worked doesn't get rolled back and the fresh command deletes everything first.
 
@@ -248,7 +248,7 @@ php artisan make:seeder BoardListsTableSeeder
 php artisan make:seeder CardsTableSeeder
 ```
 
-When we use the seed command of artisan, it will call the main DatabaseSeeder class located at `database/seeds/DatabaseSeeder.php`, so we will have to call all other seeders in it like this:
+When we use the seed command of artisan, it will call the main DatabaseSeeder class located at `database/seeds/DatabaseSeeder.php`, so we will have to call all other seeders from it like this:
 
 ```php
 <?php
@@ -386,7 +386,7 @@ $factory->define(App\Board::class, function (Faker $faker) {
 });
 ```
 
-For the Board factory we just give it a random name from Faker and a random user_id (which will always be our only created user in this case).
+For the Board factory we just provide a random name from Faker and a random user_id (which will always be our only created user in this case).
 
 ```php
 <?php
@@ -419,11 +419,11 @@ $factory->define(App\Card::class, function (Faker $faker) {
 });
 ```
 
-And for the card factory the same with the addition of a description text.
+And the same for the card factory with the addition of a description text.
 
-And with that we can run `php artisan db:seed` to seed our database with some testing data and use the factories in our tests later for easy creation of objects.
+And with that we can run `php artisan db:seed` to seed our database with some testing data and use the factories in our tests for easy creation of objects.
 
-In our next step we want to create the API routes and controllers so that we can consume the data via the API. For that see Part 3.
+In our next step we want to create the API routes and controllers so that we can consume the data via an API. For that see Part 3.
 
 [source]: https://github.com/ddmler/boards
 [part1]: https://ddmler.github.io/laravel/vue/2018/07/13/vue-spa-with-laravel-api-part-1.html
