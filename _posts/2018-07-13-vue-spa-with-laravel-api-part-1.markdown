@@ -10,7 +10,7 @@ The complete source code of this series is available [on GitHub][source].
 
 - Part 1: Setting up a Vue SPA with a Laravel API as the backend using JWT authentication. (You are here)
 - Part 2: [Creating everything database related: models, migrations, seeders and factories.][part2]
-- Part 3: Setting up API routes and creating API resource controllers.
+- Part 3: [Setting up API routes and creating API resource controllers.][part3]
 - Part 4: Testing the API with feature tests and sqlite.
 - Part 5: Setting up Continuous Deployment with TravisCI and Heroku.
 - Part 6: Customizing the frontend skeleton, design and Dashboard component.
@@ -433,3 +433,4 @@ You should now be able to register, login and logout. You can stop the tutorial 
 [jwt]: https://github.com/tymondesigns/jwt-auth
 [source]: https://github.com/ddmler/boards
 [part2]: https://ddmler.github.io/laravel/vue/2018/07/17/vue-spa-with-laravel-api-part-2.html
+[part3]: https://ddmler.github.io/laravel/vue/2018/07/20/vue-spa-with-laravel-api-part-3.html
