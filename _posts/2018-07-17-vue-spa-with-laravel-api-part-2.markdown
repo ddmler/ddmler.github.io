@@ -10,7 +10,7 @@ The complete source code of this series is available [on GitHub][source].
 
 - Part 1: [Setting up a Vue SPA with a Laravel API as the backend using JWT authentication.][part1]
 - Part 2: Creating everything database related: models, migrations, seeders and factories. (You are here)
-- Part 3: Setting up API routes and creating API resource controllers.
+- Part 3: [Setting up API routes and creating API resource controllers.][part3]
 - Part 4: Testing the API with feature tests and sqlite.
 - Part 5: Setting up Continuous Deployment with TravisCI and Heroku.
 - Part 6: Customizing the frontend skeleton, design and Dashboard component.
@@ -423,7 +423,8 @@ And the same for the card factory with the addition of a description text.
 
 And with that we can run `php artisan db:seed` to seed our database with some testing data and use the factories in our tests for easy creation of objects.
 
-In our next step we want to create the API routes and controllers so that we can consume the data via an API. For that see Part 3.
+In our next step we want to create the API routes and controllers so that we can consume the data via an API. For that see [Part 3][part3].
 
 [source]: https://github.com/ddmler/boards
 [part1]: https://ddmler.github.io/laravel/vue/2018/07/13/vue-spa-with-laravel-api-part-1.html
+[part3]: https://ddmler.github.io/laravel/vue/2018/07/20/vue-spa-with-laravel-api-part-3.html
