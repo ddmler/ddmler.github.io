@@ -11,7 +11,7 @@ The complete source code of this series is available [on GitHub][source].
 - Part 1: [Setting up a Vue SPA with a Laravel API as the backend using JWT authentication.][part1]
 - Part 2: [Creating everything database related: models, migrations, seeders and factories.][part2]
 - Part 3: Setting up API routes and creating API resource controllers. (You are here)
-- Part 4: Testing the API with feature tests and sqlite.
+- Part 4: [Testing the API with feature tests and sqlite.][part4]
 - Part 5: Setting up Continuous Deployment with TravisCI and Heroku.
 - Part 6: Customizing the frontend skeleton, design and Dashboard component.
 - Part 7: Creating the remaining Vue components: Board, List, Card, Modal.
@@ -418,8 +418,9 @@ class CardController extends Controller
 
 Again almost the same but here we use update in two different ways: once to update the name and once to update the description (these will be two different forms in the frontend as we will see later)
 
-And now we have a fully functioning API for authentication, Boards, BoardLists and Cards. But we still lack some tests for our API so we will create some feature tests next. You can find these in part 4.
+And now we have a fully functioning API for authentication, Boards, BoardLists and Cards. But we still lack some tests for our API so we will create some feature tests next. You can find these in [part 4][part4].
 
 [source]: https://github.com/ddmler/boards
 [part1]: https://ddmler.github.io/laravel/vue/2018/07/13/vue-spa-with-laravel-api-part-1.html
 [part2]: https://ddmler.github.io/laravel/vue/2018/07/17/vue-spa-with-laravel-api-part-2.html
+[part4]: https://ddmler.github.io/laravel/vue/2018/07/24/vue-spa-with-laravel-api-part-4.html
