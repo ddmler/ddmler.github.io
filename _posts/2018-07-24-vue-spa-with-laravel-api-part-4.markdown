@@ -324,7 +324,7 @@ class BoardListTest extends DatabaseTestCase
 }
 ```
 
-It's pretty much the same as before. We test store, update, delete, loginRequired and Authorization needed. We added a created boardList into our setup since we now need a boardList too. If you understood the Board tests you should also quickly understand these here.
+It's pretty much the same as before. We test store, update, delete, loginRequired and authorization needed. We added a created boardList into our setup since we now need a boardList too. If you understood the Board tests you should also quickly understand these here.
 
 And finally `tests/Feature/CardTest.php`:
 
