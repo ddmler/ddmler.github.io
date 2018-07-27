@@ -12,7 +12,7 @@ The complete source code of this series is available [on GitHub][source].
 - Part 2: [Creating everything database related: models, migrations, seeders and factories.][part2]
 - Part 3: [Setting up API routes and creating API resource controllers.][part3]
 - Part 4: Testing the API with feature tests and sqlite. (You are here)
-- Part 5: Setting up Continuous Deployment with TravisCI and Heroku.
+- Part 5: [Setting up Continuous Deployment with TravisCI and Heroku.][part5]
 - Part 6: Customizing the frontend skeleton, design and Dashboard component.
 - Part 7: Creating the remaining Vue components: Board, List, Card, Modal.
 - Part 8: Setting up Jest and testing all Vue components with it.
@@ -452,9 +452,10 @@ Again we added a card to our setup but the tests are pretty much the same.
 
 We make heavy use of the factories and often provide an array to the create method which overwrites the default values which we defined in the factories. All test code is very easy to understand and read which makes developing these tests really enjoyable thanks to Laravels helper methods. And since we're using Laravels auth system with our JWT authentication we can simply use actingAs instead of having to get and send a bearer token and all that stuff. So this was a lot of fun, I really like feature testing Laravel applications.
 
-In the next post we want to setup TravisCI to run these tests automatically on different PHP versions, and if everything works deploy the code to heroku.
+[In the next post][part5] we want to setup TravisCI to run these tests automatically on different PHP versions, and if everything works deploy the code to heroku.
 
 [source]: https://github.com/ddmler/boards
 [part1]: https://ddmler.github.io/laravel/vue/2018/07/13/vue-spa-with-laravel-api-part-1.html
 [part2]: https://ddmler.github.io/laravel/vue/2018/07/17/vue-spa-with-laravel-api-part-2.html
 [part3]: https://ddmler.github.io/laravel/vue/2018/07/20/vue-spa-with-laravel-api-part-3.html
+[part5]: https://ddmler.github.io/laravel/vue/2018/07/27/vue-spa-with-laravel-api-part-5.html
