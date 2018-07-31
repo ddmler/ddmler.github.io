@@ -13,7 +13,7 @@ The complete source code of this series is available [on GitHub][source].
 - Part 3: [Setting up API routes and creating API resource controllers.][part3]
 - Part 4: [Testing the API with feature tests and sqlite.][part4]
 - Part 5: Setting up Continuous Deployment with TravisCI and Heroku. (You are here)
-- Part 6: Customizing the frontend skeleton, design and Dashboard component.
+- Part 6: [Customizing the frontend skeleton, design and Dashboard component.][part6]
 - Part 7: Creating the remaining Vue components: Board, List, Card, Modal.
 - Part 8: Setting up Jest and testing all Vue components with it.
 
@@ -183,7 +183,7 @@ Since we have migrations and seeders we want to run we have to use herokus run c
 
 `heroku run "php artisan migrate && php artisan db:seed"`
 
-And that's it you should now be able to visit your heroku app and login.
+And that's it you should now be able to visit your heroku app and login. In [part 6][part6] we will work a bit on the frontend markup and design.
 
 [travis]: https://travis-ci.org/
 [heroku]: https://heroku.com/
@@ -192,3 +192,4 @@ And that's it you should now be able to visit your heroku app and login.
 [part2]: https://ddmler.github.io/laravel/vue/2018/07/17/vue-spa-with-laravel-api-part-2.html
 [part3]: https://ddmler.github.io/laravel/vue/2018/07/20/vue-spa-with-laravel-api-part-3.html
 [part4]: https://ddmler.github.io/laravel/vue/2018/07/24/vue-spa-with-laravel-api-part-4.html
+[part6]: https://ddmler.github.io/laravel/vue/2018/07/31/vue-spa-with-laravel-api-part-6.html
