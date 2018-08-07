@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Vue SPA with Laravel API Part 7"
-date:   2018-08-03 18:00:00 +0100
+date:   2018-08-07 18:00:00 +0100
 categories: laravel vue
 description: "Part 7: Creating the remaining Vue components: Board, List, Card, Modal."
 ---
