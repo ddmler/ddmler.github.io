@@ -17,8 +17,6 @@ The complete source code of this series is available [on GitHub][source].
 - Part 7: [Creating the remaining Vue components: Board, List, Card, Modal.][part7]
 - Part 8: [Setting up Jest and testing all Vue components with it.][part8]
 
-(Links will be added when the posts are online)
-
 In this part we want to setup a sqlite database for our testsuite and create feature tests for our API. The feature tests here will have a simple design: make a json call to each API endpoint, assert the correct HTTP response code and assert that the intended functionality is working correctly if the provided data is correct.
 
 We will also add some tests that test validation errors and authorization.
