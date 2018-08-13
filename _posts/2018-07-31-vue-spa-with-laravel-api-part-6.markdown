@@ -17,8 +17,6 @@ The complete source code of this series is available [on GitHub][source].
 - Part 7: [Creating the remaining Vue components: Board, List, Card, Modal.][part7]
 - Part 8: [Setting up Jest and testing all Vue components with it.][part8]
 
-(Links will be added when the posts are online)
-
 Lets work a bit on our frontend after all that backend stuff. For this we need to install some additional dependencies:
 
 `npm install --save-dev @fortawesome/fontawesome-free bulma vuedraggable`
