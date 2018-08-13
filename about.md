@@ -6,4 +6,4 @@ permalink: /about/
 
 I'm Enrico Höschler, but on most sites you'll see me as ddmler. Currently I'm studying computer science at a german university.
 
-I wrote my first code when I was about 12 years old, since then I knew what I wanted to do. My main passions are web development, IT security and DevOps so I'll probably write mostly about those three topics here, but I'm also interested in a lot of other things so maybe there will be some other stuff too.
+I wrote my first code when I was about 13 years old and fell in love immediately. My main passions are (full stack) web development, IT security and DevOps so I'll probably write mostly about those three topics here, but you could also find some more "exotic" IT stuff here. This blog is strictly technical, so you won't find any boring stuff about my personal life, useless rants or ad posts for some conferences on the other side of the world that you can't attend anyway.
