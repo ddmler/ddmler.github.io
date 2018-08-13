@@ -14,8 +14,8 @@ The complete source code of this series is available [on GitHub][source].
 - Part 4: [Testing the API with feature tests and sqlite.][part4]
 - Part 5: Setting up Continuous Deployment with TravisCI and Heroku. (You are here)
 - Part 6: [Customizing the frontend skeleton, design and Dashboard component.][part6]
-- Part 7: Creating the remaining Vue components: Board, List, Card, Modal.
-- Part 8: Setting up Jest and testing all Vue components with it.
+- Part 7: [Creating the remaining Vue components: Board, List, Card, Modal.][part7]
+- Part 8: [Setting up Jest and testing all Vue components with it.][part8]
 
 (Links will be added when the posts are online)
 
@@ -193,3 +193,5 @@ And that's it you should now be able to visit your heroku app and login. In [par
 [part3]: https://ddmler.github.io/laravel/vue/2018/07/20/vue-spa-with-laravel-api-part-3.html
 [part4]: https://ddmler.github.io/laravel/vue/2018/07/24/vue-spa-with-laravel-api-part-4.html
 [part6]: https://ddmler.github.io/laravel/vue/2018/07/31/vue-spa-with-laravel-api-part-6.html
+[part7]: https://ddmler.github.io/laravel/vue/2018/08/07/vue-spa-with-laravel-api-part-7.html
+[part8]: https://ddmler.github.io/laravel/vue/2018/08/10/vue-spa-with-laravel-api-part-8.html
