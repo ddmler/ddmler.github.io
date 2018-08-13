@@ -426,7 +426,7 @@ export default {
 
 When the component is created, we fetch the data, which is the index method of our BoardController. We list each board in a flexbox as a bulma card. Each card contains a router link to the board view and on hover shows a trash icon. When clicking the trash icon vue will execute the deleteThis method which will simply use the delete API endpoint. The last flexbox item is a form to create a new board. The component is very straightforward since we just have 3 crud methods implemented here with a bit of design.
 
-The other 4 components are a bit more complex since they will include drag&drop and more crud functionality. We will look at them in the next part.
+The other 4 components are a bit more complex since they will include drag&drop and more crud functionality. We will look at them in the [next part][part7].
 
 [eslint]: https://ddmler.github.io/linter/vue/javascript/2018/03/31/using-eslint-to-enforce-the-vue-js-style-guide.html
 [stylelint]: https://ddmler.github.io/linter/css/2018/06/04/using-stylelint-to-enforce-the-sass-guidelines-project.html
