@@ -17,8 +17,6 @@ The complete source code of this series is available [on GitHub][source].
 - Part 7: [Creating the remaining Vue components: Board, List, Card, Modal.][part7]
 - Part 8: [Setting up Jest and testing all Vue components with it.][part8]
 
-(Links will be added when the posts are online)
-
 In this part we want to setup TravisCI so that it runs all our feature tests on different php versions and if everything works it should automatically deploy everything to heroku.
 
 First we need to install the cli tools of TravisCI and heroku:
