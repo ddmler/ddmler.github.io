@@ -622,7 +622,7 @@ export default {
 
 Here we first have a mask, which is a simple black overlay with 50% opacity, which will be behind our modal. The modal itself displays the cards name and it's description. The description is editable, this time not with an onBlur effect. We display an icon to abort the editing process. We also have a scale transform animation, the rest is just some nice designing.
 
-We're almost done with our project. The last post will cover how we set up Jest, add it to TravisCI and write tests for all our components.
+We're almost done with our project. [The last post][part8] will cover how we set up Jest, add it to TravisCI and write tests for all our components.
 
 [source]: https://github.com/ddmler/boards
 [part1]: https://ddmler.github.io/laravel/vue/2018/07/13/vue-spa-with-laravel-api-part-1.html
