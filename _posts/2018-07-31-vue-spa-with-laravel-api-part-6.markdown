@@ -195,7 +195,7 @@ axios.interceptors.response.use(config => {
 });
 ```
 
-All we did is add a new route to view a board, add a data and a methods object to our root vue object and create some axios interceptors. The axios interceptors will set the loading state of our application on our root object before each request it makes and when it gets a response it will automatically check for Laravel errors (we handle validation and other errors the same here and display all, you could also just display all validation errors) and set the loading state to false again. We use these root element data objects in our `resources/assets/js/App.vue` file but we could use them anywhere:
+All we did is add a new route to view a board, add a data and a methods object to our root vue object and create some axios interceptors. The axios interceptors will set the loading state of our application on our root object before each request it makes and when it gets a response it will automatically check for Laravel errors (we handle validation and other errors the same here and display all, you could also just display all validation errors, which for a real project in production is a way better idea than just outputting every error you get) and set the loading state to false again. We use these root element data objects in our `resources/assets/js/App.vue` file but we could use them anywhere:
 
 {% raw %}
 ```html
